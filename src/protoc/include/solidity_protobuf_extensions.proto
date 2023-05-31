@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package solidity;
+
+option go_package = "github.com/mengbin92/protoc-gen-solididy/src/protoc/go;solidity";
+
+import "google/protobuf/descriptor.proto";
+
+message FileOptions {string location = 1;}
+
+extend google.protobuf.FileOptions { FileOptions file_options = 50000;}
