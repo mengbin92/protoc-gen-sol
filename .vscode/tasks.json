@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "protoc-gen-solidity gen",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "solidity_generator.cpp",
+                "-o",
+                "protoc-gen-solidity",
+                "-L/usr/local/lib",
+                "-lprotoc",
+                "-lprotobuf"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
