@@ -21,3 +21,6 @@
 go.work
 
 protoc-gen-solidity
+
+*.proto
+*.sol
